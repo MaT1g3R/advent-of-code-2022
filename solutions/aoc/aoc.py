@@ -3,8 +3,8 @@ import __main__
 
 
 def get_input() -> str:
-    day = __main__.__file__.replace("py", "txt")
-    return (Path("data") / day).read_text()
+    day = __main__.__file__.replace("py", "txt").replace("solutions", "data")
+    return Path(day).read_text()
 
 
 def lines(s):
